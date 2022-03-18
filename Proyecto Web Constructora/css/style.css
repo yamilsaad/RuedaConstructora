@@ -308,7 +308,45 @@ body{
 }
 
 
+/*section-form*/
+.section-form{
+    width: 100%;
+    height: 900px;
+    padding: 40px 0vw;
+    background:#fff;
+}
 
+.form{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #333435 100%);
+    width: 90%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+.form-container{
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+}
+.form-container-title{
+    text-align: center;
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+}
+
+.form-imput{
+    font-family: 'lato', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+}
+
+.fomr__cta{
+    font-family: 'lato', sans-serif;
+}
 @media screen and (max-width: 800px) {
     
 }
