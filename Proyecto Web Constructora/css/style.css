@@ -370,7 +370,7 @@ body{
     .mid-section{
         width: 90%;
     }
-    /* .section-galeria{
+    .section-galeria{
         width: 90%;
     }
     .section-galeria .section-galeria-img{
@@ -378,5 +378,5 @@ body{
         flex-direction: column;
         align-items: center;
         gap: 10px;
-    } */
+    }
 }
