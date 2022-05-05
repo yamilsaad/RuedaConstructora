@@ -1,64 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">   
-    <title>Construccion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/b5097528420d7ecf74020d4df7339162?family=AR+DESTINE" rel="stylesheet" type="text/css"/>   
+    <title>Codenor</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <!--nav bar-->
-    <nav class="navbar">
-        <img class="logo-empresa" src="" alt="">
-        <ul class="links-container">
-            <li class="link-item"><a href="#inicio" class="link">Inicio</a></li>
-            <li class="link-item"><a href="#ofrecemos" class="link">¿Qué te ofrecemos?</a></li>
-            <li class="link-item"><a href="#nosotros" class="link">Sobre Nosotros</a></li>
-            <li class="link-item"><a href="#galeria" class="link">Galeria</a></li>
-            <li class="link-item"><a href="#contacto" class="link">Contacto</a></li>
-        </ul>
-        <!-- <div class="menu-interactions">
-            <div class="menu-icon">
-                <img src="Assest/icons8-menú-30.png" class="menu-icon-img" alt="menu>
-            </div>
-            <div class="user">
-                <img src="" alt="">
-            </div>
-        </div> -->
-    </nav>
+    
     <!--header-->
     <header id="inicio" class="header-section">
-        <h1 class="header-heading"><span>Pagina </span>Inicio</h1>
+        <!--nav bar-->
+        <nav class="navbar">
+            <div class="logo_container">
+                <img src="/RuedaConstructora/Proyecto Web Constructora/Assest/logo_codenor_blanco.png" class="logo-png" alt="logo">
+                    <!--<h6 class="logo-item"> CODENOR </h6></a>-->
+            </div>
+            <ul class="links-container">
+                <li class="link-item"><a href="#inicio" class="link">CODENOR</a></li>
+                <li class="link-item"><a href="#ofrecemos" class="link">¿Qué hacemos?</a></li>
+                <li class="link-item"><a href="#nosotros" class="link">Sobre Nosotros</a></li>
+                <li class="link-item"><a href="#galeria" class="link">Galeria</a></li>
+                <li class="link-item"><a href="#formulario" class="link">Contacto</a></li>
+            </ul>
+            <div class="menu-interactions">
+                <div class="menu-icon">
+                    <img src="Assest/whatsapp.png" class="menu-icon-img" alt="menu">
+                </div>
+                <!--
+                <div class="menu-icon">
+                    <img src="Assest/instagram.png" class="menu-icon-img" alt="menu">
+                </div>
+                -->
+                <div class="user">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </nav>
     </header>
+    <!--<h1 class="header-heading"><span>CD </span>CODENOR</h1>-->
+    
     <!--Slider-->
+    
     <div class="slider">
         <ul>
-            <li><img src="Assest/heading2.jpg" alt=""></li>
-            <li><img src="Assest/dos-constructores.jpg" alt=""></li>
-            <li><img src="Assest/heading3.jpg" alt=""></li>
-            <li><img src="Assest/pexels-aleksandar-pasaric-1437493.jpg" alt=""></li>
-            <li><img src="Assest/heading8.jpg" alt=""></li>
+            <li><img src="Assest/slider/BANNER 1.png" class="img-banner" alt=""></li>
+            <li><img src="Assest/slider/BANNER 2.png" class="img-banner" alt=""></li>
+            <li><img src="Assest/slider/BANNER 3.png" class="img-banner" alt=""></li>
         </ul>
     </div>
+    
     <!--best selling products-->
     <section id="ofrecemos" class="best-selling-product-section">
-        <h1 class="section-title">¿Qué te ofrecemos?</h1>
+        <h1 class="section-title">¿Qué Hacemos?</h1>
         <div class="product-container">
             <div class="product-card">
                 <img src="Assest/steel-framing.jpeg" class="product-img" alt="pared">
-                <p class="product-name">Steel Framing</p>
+                <p class="product-name">Construímos Sueños</p>
             </div>
             <div class="product-card">
-                <img src="Assest/decointerior_img.jpg" class="product-img" alt="block">
-                <p class="product-name">Reforma</p>
+                <img src="Assest/epoxi-pintura.png" class="product-img" alt="block">
+                <p class="product-name">Pisos Epoxi</p>
             </div>
             <div class="product-card">
-                <img src="Assest/interior_arqu.jpg" class="product-img" alt="piso">
-                <p class="product-name">Planifica</p>
+                <img src="Assest/Impermeabilización_techos.png" class="product-img" alt="piso">
+                <p class="product-name">Coberturas Impermiabilización</p>
             </div>
         </div>
     </section>
@@ -188,7 +200,7 @@
         <a class="cerrar" href="#galeria">X</a>
     </div>
 
-    <!-- <div class="section-form">
+    <div class="section-form" id="formulario">
         <form class="form">
             <div class="form-container">
                 <h2 class="form-container-title">Contacto</h2>
@@ -196,18 +208,22 @@
                 <input type="email" class="form-imput" placeholder="Email:">
                 <textarea class="form-imput form-imput--message" placeholder="Mensaje:"></textarea>
 
-                <input type="submit" value="Enviar" class="form__cta">
+                <button class="form__cta">ENVIAR</button>
             </div>
         </form>
-    </div> -->
-    <footer class="footer">
-        <ul class="links-container">
-            <li class="link-item"><a href="#inicio" class="link active">Inicio</a></li>
-            <li class="link-item"><a href="#ofrecemos" class="link">¿Qué te ofrecemos?</a></li>
-            <li class="link-item"><a href="#nosotros" class="link">Sobre Nosotros</a></li>
-            <li class="link-item"><a href="#galeria" class="link">Galeria</a></li>
-            <li class="link-item"><a href="#contacto" class="link">Contacto</a></li>
-        </ul>
+    </div>
+
+    <footer>
+        
+        <div class="footer_div">
+           <ul class="links-container-footer">
+                <li class="link-item-footer"><a href="#ofrecemos" class="link__footer-so">¿Qué Hacemos?</a></li>
+                <li class="link-item-footer"><a href="#nosotros" class="link__footer-so">Sobre Nosotros</a></li>
+                <li class="link-item-footer"><a href="#galeria" class="link__footer-so">Galeria</a></li>
+                <li class="link-item-footer"><a href="#contacto" class="link__footer-so">Contacto</a></li>
+           </ul>
+        </div>
     </footer>
+      
 </body>
 </html>
