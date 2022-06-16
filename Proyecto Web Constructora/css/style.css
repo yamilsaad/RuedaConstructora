@@ -520,4 +520,101 @@ footer{
 
 /* MOBILE VIEW*/ 
 @media only screen and (max-width: 600px) {
+    body{  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(15, auto);
+    }
+    .header-section{   
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+    }
+    .links-container{
+        display: none;
+    }
+    .menu-interactions{
+        display: none;
+    }
+    .slider{
+        grid-column: 1 / span 2;
+        grid-row: 2 / 3;
+        height: 135px;
+    }
+    .mid-section{
+        grid-column: 1 / span 2;
+        grid-row: 3 / 4;
+        height: 750px;
+    }
+    .codenor-img-logo {
+        height: 50px;
+        width: 70px;
+    }
+    .sub-codenor h1 {
+        font-size: 35px;
+        margin: 85px 0px 0px 10px;
+    }
+    .section-mid-container {
+        padding: 20px;
+        top: 10px;
+    }
+    .section-info {
+        width: 65%;
+        padding: 15px;
+        height: 85%;    
+    }
+    .mision-section{
+        grid-column: 1 / span 2;
+        grid-row: 4 / 5;
+        height: 450px;
+    }
+    .mision-img {
+        width: 405px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .img-mision1 {
+        width: 100%;
+        height: 50%;
+    }
+    .section-info-mision {
+        width: auto;
+        height: 50%;
+        padding: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .best-selling-product-section{
+        grid-column: 1 / span 2;
+        grid-row: 5 / 6;
+        padding: 25px;
+    }
+    .product-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-card {
+        width: 350px;
+        height: 360px;
+        margin: 10px;
+    }
+    .info{
+        grid-column: 1 / span 2;
+        grid-row: 6 / 7;
+    }
+    .pisos{
+        grid-column: 1 / span 2;
+        grid-row: 7 / 8;
+    }
+    .cubiertas{
+        grid-column: 1 / span 2;
+        grid-row: 8 / 9;
+    }
+    .section-form{
+        grid-column: 1 / span 2;
+        grid-row: 9 / 10;
+    }
+    footer{
+        grid-column: 1 / span 2;
+        grid-row: 10 / 11;
+    }
 }
