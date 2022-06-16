@@ -19,6 +19,10 @@ body{
     background-color: #fff;
     padding: 0px 0px 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, auto);
 }
 .header-section{
     display: flex;
@@ -29,6 +33,9 @@ body{
     left: 0;
     border-top: 10px;
     background: #035397;
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
 }
 
 .navbar{
@@ -60,9 +67,9 @@ body{
     cursor: pointer;
 }
 .logo_container:hover .logo-png{
-    -webkit-transform:scale(1.05);
-    transform:scale(1.05);
-    transition: .5s;
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: .6s;
 }
 .logo_container{
     margin-top: 5px;
@@ -97,10 +104,6 @@ body{
     border-radius: 8px;
 }
 .menu-interactions{
-/*     display: inline-grid;
-    grid-template-columns: 25px 25px;
-    column-gap: 30px;
-    row-gap: 10px; */
     position:absolute;
     right: 3vw;
 }
@@ -124,13 +127,14 @@ body{
 
 /*Slider*/
 .slider{
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
     width: 100%;
     height: 450px;
     margin:0px;
     overflow: hidden;
     background: #fff;
+
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
 }
 .slider ul{
     display: flex;
@@ -148,82 +152,32 @@ body{
     margin: 0px;
     padding-inline-end: 5px;
 }
-/*.img-banner{
-    height: 600px;
-}*/
-
 @keyframes cambio {
     5%{margin-left: 0;}
     25%{margin-left: 0;}
-
     30% {margin-left: -100%;}
     45% {margin-left: -125%;}
-
     50% {margin-left: -150%;}
     70% {margin-left: -200%;}
 }
 
-/*Mision*/
-.mision-section{
-    display: grid;
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
-    width: 100%;
-    height: 800px;
-    padding: 40px 0vw;
-    background-color: #424153;
-    color: #fff;
-    margin-top: 5px;
-}
-.section-info-mision{
-    width: 700px;
-    height: 50%;
-    background-color: #424153;
-    color: #fff;
-    margin-right: auto;
-    padding: 10px;
-    padding-top: 50px;
-    text-align: center;
-    margin-top: 0px;
-}
-.mision-img{
-    width: 750px;
-    height: 500px;
-    border-radius: 5px;
-    overflow: hidden;
-    position: absolute;
-    margin: 0px 0px 300px 600px;
-    opacity: 0;
-    transform: translate(10vh, 0);
-    transition: all 1s;
-}
-.visible{
-    opacity: 1;
-    transform: translate(0, 0);
-}
-.img-mision1{
-    width: 100%;
-    height: 100%;
-}
-
-
-
 /*mid-section*/
 .mid-section{
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
     width: 100%;
     height: 1000px;
     padding: 40px 0vw;
     background-color: #035397;
     margin-top: 5px;
+
+    grid-column: 1 / span 2;
+    grid-row: 3 / 4;
 }
-.section-item-container{
+.section-mid-container{
     width: 100%;
     height: 100%;
     position: relative;
     padding: 20px;
-    top: 60px;
+    top: -135px;
 }
 .section-bg{
     width: 100%;
@@ -235,7 +189,7 @@ body{
 }
 .section-info{
     width: 49%;
-    height: 90%;
+    height: 60%;
     background-color: #fff;
     color: #190c05;
     display: block;
@@ -276,13 +230,56 @@ body{
     margin: 430px 0px 0px 120px;
 }
 
+/*Mision*/
+.mision-section{
+    width: 100%;
+    height: 800px;
+    padding: 40px 0vw;
+    background-color: #424153;
+    color: #fff;
+    margin-top: 5px;
+
+    grid-column: 1 / span 2;
+    grid-row: 4 / 5;
+}
+.section-info-mision{
+    width: 700px;
+    height: 50%;
+    background-color: #424153;
+    color: #fff;
+    margin-right: auto;
+    padding: 10px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 0px;
+}
+.mision-img{
+    width: 750px;
+    height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0px 0px 300px 600px;
+    opacity: 0;
+    transform: translate(10vh, 0);
+    transition: all 1s;
+}
+.visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.img-mision1{
+    width: 100%;
+    height: 100%;
+}
 
 /*best selling product*/
 .best-selling-product-section{
-    grid-column: 2 / 3;
-    grid-row: 4 / 5;
     position: relative;
     padding: 100px 6vw;
+
+    grid-column: 1 / span 2;
+    grid-row: 5 / 6;
 }
 .section-title{
     font-family: 'lato', sans-serif;
@@ -304,10 +301,6 @@ body{
     position: relative;
     margin: 10px;
 }
-/*.product-card:nth-child(even){
-    border-color: #424153;
-    background: #190c05;
-}*/
 .product-img{
     width: 100%;
     height: 100%;
@@ -341,15 +334,16 @@ body{
 }
 
 /*info-casa*/
-
 .info_casas_section{
-    grid-column: 2 / 3;
-    grid-row: 5 / 6;
     width: 100%;
     height: 800px;
     padding: 40px 0vw;
     background-color: #fff;
     margin-top: 5px;
+}
+.info{
+    grid-column: 1 / span 2;
+    grid-row: 6 / 7;
 }
 
 /*info-pisos*/
@@ -363,6 +357,10 @@ body{
     padding-top: 10px;
     text-align: center;
     margin-top: 0px;
+}
+.pisos{
+    grid-column: 1 / span 2;
+    grid-row: 7 / 8;
 }
 .animacion{
     display: flex;
@@ -386,7 +384,6 @@ body{
 }
 
 /*info-cubiertas*/
-
 .section-info-cubiertas{
     width: 49%;
     height: 90%;
@@ -398,6 +395,10 @@ body{
     padding-top: 50px;
     text-align: center;
     margin-top: 0px;
+}
+.cubiertas{
+    grid-column: 1 / span 2;
+    grid-row: 8 / 9;
 }
 .section-info-cubiertas .title .span{
     color: #035397;
@@ -411,6 +412,9 @@ body{
     color: #fff;
     padding: 40px 0vw;
     background:#fff;
+
+    grid-column: 1 / span 2;
+    grid-row: 9 / 10;
 }
 .form{
     background-color: #035397;
@@ -460,11 +464,14 @@ footer{
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
-    height: 60px;
+    height: 80px;
     top: 0;
     left: 0;
     border-top: 10px;
     background-color: #035397;
+
+    grid-column: 1 / span 2;
+    grid-row: 10 / 11;
 }
 .footer_div{
     display: flex;
@@ -513,65 +520,4 @@ footer{
 
 /* MOBILE VIEW*/ 
 @media only screen and (max-width: 600px) {
-    body{
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: repeat(10, auto);
-        gap: 0px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar {
-        height: 295px;
-        justify-content: center;
-    }
-    .navbar ul{
-        flex-direction: column;
-    }
-    .link{
-        font-size: 25px;
-    }
-    .header-section{
-        padding-left: 100px;
-    }
-    .slider{
-    }
-    .section-info {
-        padding: 40px;
-        text-align: left;
-    }
-    .title{
-        font-size: 20px;
-        line-height: 65px;
-    }
-    .info{
-        margin: 0;
-        font-size: 20px;
-        line-height: 35px;
-    }
-    .best-selling-product-section{
-    }
-    .best-selling-product-section .product-container{
-        flex-direction: column;
-        gap: 10px;
-    }
-    .best-selling-product-section .product-container .product-card{
-        margin-left: 35px;
-        width: 400px;
-    }
-    .mid-section{
-    }
-    .section-galeria{
-        padding: 12px;
-    }
-    .section-galeria-img {
-        white-space: normal;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-gap: 10px;
-    }
-    .galeria-img-card{
-        width: 250px;
-        height: 250px;
-    }
 }
