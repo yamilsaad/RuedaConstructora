@@ -67,8 +67,8 @@ body{
     cursor: pointer;
 }
 .logo_container:hover .logo-png{
-    -webkit-transform:scale(1.3);
-    transform:scale(1.3);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
     transition: .6s;
 }
 .logo_container{
@@ -177,7 +177,7 @@ body{
     height: 100%;
     position: relative;
     padding: 20px;
-    top: -135px;
+    top: 60px;
 }
 .section-bg{
     width: 100%;
@@ -234,7 +234,8 @@ body{
 .mision-section{
     width: 100%;
     height: 800px;
-    padding: 40px 0vw;
+    padding: 40px;
+    padding-left: 10px;
     background-color: #424153;
     color: #fff;
     margin-top: 5px;
@@ -247,11 +248,17 @@ body{
     height: 50%;
     background-color: #424153;
     color: #fff;
-    margin-right: auto;
-    padding: 10px;
-    padding-top: 50px;
-    text-align: center;
+    /*margin-right: auto;*/
+    padding: 20px 20px 20px 20px;
     margin-top: 0px;
+}
+.title-mision{
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 0%;
+}
+.title-mision span{
+    color: #035397;
 }
 .mision-img{
     width: 750px;
@@ -259,7 +266,9 @@ body{
     border-radius: 5px;
     overflow: hidden;
     position: absolute;
-    margin: 0px 0px 300px 600px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    left: 500px;
     opacity: 0;
     transform: translate(10vh, 0);
     transition: all 1s;
@@ -345,7 +354,14 @@ body{
     grid-column: 1 / span 2;
     grid-row: 6 / 7;
 }
-
+.title-casa{
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 0%;
+}
+.title-casa span{
+    color: #035397;
+}
 /*info-pisos*/
 .section-info-pisos{
     width: 100%;
@@ -381,6 +397,25 @@ body{
     width: 500px;
     height: 350px;
     padding: 5px;
+    padding-top: 40px;
+}
+.title-pisos{
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 0%;
+}
+.title-pisos span{
+    color: #035397;
+}
+.info-pisos{
+    font-family: var(--font3);
+    font-size: 20px;
+    line-height: 35px;
+    margin-top: 0px;
+    opacity: 0.7;
+    text-align: justify;
+    font-weight: 200;
+    padding: 30px;
 }
 
 /*info-cubiertas*/

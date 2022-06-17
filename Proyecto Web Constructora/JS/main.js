@@ -1,4 +1,4 @@
-var btnScrolltop = document.getElementById('btnScrolltop');
+let btnScrolltop = document.getElementById('btnScrolltop');
 
 btnScrolltop.addEventListener('click', ()=>{
     window.scrollTo(0,0);
@@ -32,7 +32,7 @@ window.addEventListener('scroll', function()  {
     let elements = document.getElementsByClassName('animacion');
     let screenSize = window.innerHeight;
     
-      for(var i = 0; i < elements.length; i++) {
+      for(let i = 0; i < elements.length; i++) {
         let element = elements[i];
   
         if(element.getBoundingClientRect().top < screenSize) {
