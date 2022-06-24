@@ -1,3 +1,13 @@
+//hamburguer menu
+const hamburguer = document.querySelector('.hamburguer');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburguer.addEventListener('click', ()=>{
+  hamburguer.classList.toggle('active');
+  navMenu.classList.toggle('active');
+})
+
+//function to scroll button
 let btnScrolltop = document.getElementById('btnScrolltop');
 
 btnScrolltop.addEventListener('click', ()=>{
@@ -13,6 +23,8 @@ window.onscroll=()=>{
     }
 }
 
+
+//functions to mision animation
 window.addEventListener('scroll', function()  {
     let elements = document.getElementsByClassName('mision-img');
     let screenSize = window.innerHeight;
